@@ -1,0 +1,18 @@
+---
+title: "Coursera Plotly Package Assignment"
+author: "Mike Rucker, Ph.D"
+date: "October 26, 2017"
+output: ioslides_presentation
+---
+
+
+## Interactive Plotly output from 'women' dataset available in R.
+<span style="font-size: 14px;">Reference: https://raw.githubusercontent.com/vincentarelbundock/Rdatasets/master/doc/datasets/women.html</span>
+
+## <span style="font-size: 18px;">Average Height and Weight for American Women (aged 30 &ndash; 39) from The World Almanac and Book of Facts, 1975.</span>
+
+```{r, echo=FALSE, message=FALSE}
+data("women")
+library(plotly)
+plot_ly(women, x = height, y = weight, mode = "markers")
+```
